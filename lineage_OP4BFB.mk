@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from CPH2071 device
-$(call inherit-product, device/oppo/CPH2071/device.mk)
+# Inherit from OP4BFB device
+$(call inherit-product, device/oppo/OP4BFB/device.mk)
 
 PRODUCT_DEVICE := OP4BFB
 PRODUCT_NAME := lineage_OP4BFB

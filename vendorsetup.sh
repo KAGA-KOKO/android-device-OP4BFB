@@ -1,3 +1,0 @@
-add_lunch_combo lineage_OP4BFB-user
-add_lunch_combo lineage_OP4BFB-userdebug
-add_lunch_combo lineage_OP4BFB-eng
