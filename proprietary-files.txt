@@ -188,9 +188,6 @@ vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbt-vendor.so
 
 # Camera
-app/OppoEngineerMode/lib/arm64/libarcsoft_single_chart_calibration.so
-app/OppoEngineerMode/lib/arm64/libcalibverifyW_T.so
-app/OppoEngineerMode/lib/arm64/libmpbase.so
 lib/libarcsoft_dualcam_wt_calibration.so
 lib/libarcsoft_dualcam_wt_verification.so
 lib/libarcsoft_single_chart_calibration.so
@@ -726,7 +723,6 @@ vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 
 # Soter
-app/SoterService/SoterService.apk
 lib/vendor.qti.hardware.soter@1.0.so
 lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
