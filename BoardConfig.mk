@@ -1,9 +1,3 @@
-#
-# Copyright (C) 2024 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
 DEVICE_PATH := device/oppo/OP4BFB
 BOARD_VENDOR := oppo
 
@@ -88,8 +82,10 @@ VENDOR_SECURITY_PATCH := 2022-01-05
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
-# VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Inherit the proprietary files
-include vendor/oppo/OP4BFB/BoardConfigVendor.mk
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
+
+-include vendor/oppo/OP4BFB/BoardConfigVendor.mk
