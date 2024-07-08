@@ -1,3 +1,4 @@
+# All blobs from full_oppo6765_19451-user 9 PPR1.180610.011 eng.root.20220118.230000 release-keys, unless pinned
 
 # ADSP
 vendor/lib64/libadsprpc.so
@@ -785,13 +786,7 @@ vendor/lib64/vendor.mediatek.hardware.gnss@1.1.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib/hw/gatekeeper.default.so
-vendor/lib/hw/gatekeeper.mt6765.so
-vendor/lib/hw/gatekeeper.oppo6765_19451.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/gatekeeper.default.so
-vendor/lib64/hw/gatekeeper.mt6765.so
-vendor/lib64/hw/gatekeeper.oppo6765_19451.so
 
 # Graphics
 vendor/lib/egl/egl.cfg
@@ -819,16 +814,12 @@ vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
-vendor/lib/hw/keystore.mt6765.so
-vendor/lib/hw/keystore.oppo6765_19451.so
 vendor/lib/hw/libMcTeeKeymaster.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/libkeymaster3device.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
-vendor/lib64/hw/keystore.mt6765.so
-vendor/lib64/hw/keystore.oppo6765_19451.so
 vendor/lib64/hw/libMcTeeKeymaster.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkeymaster3device.so
@@ -1153,33 +1144,6 @@ vendor/lib64/hw/vibrator.default.so
 # WiFi
 bin/iwpriv
 
-# rootdir
-vendor/bin/ccci_fsd
-vendor/bin/ccci_mdinit
-vendor/bin/ccci_rpcd
-vendor/bin/factory
-vendor/bin/fuelgauged
-vendor/bin/loghidlvendorservice
-vendor/bin/meta_tst
-vendor/bin/mnld
-vendor/bin/nvram_daemon
-vendor/bin/self-init
-vendor/bin/wlan_assistant
-vendor/bin/wmt_launcher
-vendor/bin/wmt_loader
-vendor/etc/DRIVER.ISO
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
-vendor/etc/init/factorybsp_service.rc
-vendor/etc/init/tee.rc
-vendor/etc/init/trustonic.rc
-vendor/etc/partition_permission.sh
-vendor/nvcfg
-vendor/nvdata
-vendor/persist
-vendor/protect_f
-vendor/protect_s
-
 # Misc
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
@@ -1220,6 +1184,9 @@ vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/bip
+vendor/bin/ccci_fsd
+vendor/bin/ccci_mdinit
+vendor/bin/ccci_rpcd
 vendor/bin/charon
 vendor/bin/cplay
 vendor/bin/dconfig
@@ -1227,7 +1194,9 @@ vendor/bin/dtc_vendor
 vendor/bin/em_hidl
 vendor/bin/epdg_wod
 vendor/bin/exp_lock
+vendor/bin/factory
 vendor/bin/factoryAta
+vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
 vendor/bin/gsm0710muxd
 vendor/bin/hw/interfaces.factoryInterface@1.0-service
@@ -1256,7 +1225,10 @@ vendor/bin/libccu_hi1336_mipi_raw.dm
 vendor/bin/libccu_hi1336_mipi_raw.pm
 vendor/bin/libccu_hi556_lce_mipi_raw.dm
 vendor/bin/libccu_hi556_lce_mipi_raw.pm
+vendor/bin/loghidlvendorservice
 vendor/bin/mcDriverDaemon
+vendor/bin/meta_tst
+vendor/bin/mnld
 vendor/bin/mrdump_tool
 vendor/bin/mtkcam-debug
 vendor/bin/mtk_agpsd
@@ -1264,8 +1236,10 @@ vendor/bin/muxreport
 vendor/bin/netdagent
 vendor/bin/netdc
 vendor/bin/nusensors
+vendor/bin/nvram_daemon
 vendor/bin/rpmbengclient_test
 vendor/bin/rttv
+vendor/bin/self-init
 vendor/bin/starter
 vendor/bin/stroke
 vendor/bin/TBaseDeviceBinding
@@ -1274,8 +1248,11 @@ vendor/bin/volte_imsm_93
 vendor/bin/volte_stack
 vendor/bin/volte_ua
 vendor/bin/wfca
+vendor/bin/wlan_assistant
 vendor/bin/wmt_concurrency
 vendor/bin/wmt_fdb
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
 vendor/bin/wmt_loopback
 vendor/data/misc/pdc.txt
 vendor/data/misc/ProjectConfig.mk
@@ -1291,6 +1268,7 @@ vendor/etc/cdma_ecc_list_OP01.xml
 vendor/etc/cdma_ecc_list_OP09.xml
 vendor/etc/cdma_ecc_list_OP12.xml
 vendor/etc/cdma_ecc_list_ss.xml
+vendor/etc/DRIVER.ISO
 vendor/etc/DSM.xml
 vendor/etc/DSM_config.xml
 vendor/etc/ecc_list.xml
@@ -1303,12 +1281,15 @@ vendor/etc/file112.wav
 vendor/etc/fstb.cfg
 vendor/etc/fteh.cfg
 vendor/etc/gles_multi.cfg
+vendor/etc/init/aee_aedv.rc
+vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/atci_service.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/camerahalserver.rc
 vendor/etc/init/em_hidl_user.rc
+vendor/etc/init/factorybsp_service.rc
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gsm0710muxd.rc
@@ -1340,6 +1321,8 @@ vendor/etc/init/netdagent.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/rild.rc
 vendor/etc/init/self-init.rc
+vendor/etc/init/tee.rc
+vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.0-service.rc
 vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
 vendor/etc/init/vendor_engineermode.rc
@@ -1391,6 +1374,7 @@ vendor/etc/mtk_omx_core.cfg
 vendor/etc/M_Liveness_Antispoofing_General_6.0.6_14700201_24320401_half.model
 vendor/etc/M_Verify_MimicRes_Common_3.4.0_10000101_50001201_half.model
 vendor/etc/ncf_pack.ncf
+vendor/etc/partition_permission.sh
 vendor/etc/permissions/pms_sysapp_removable_vendor_list.txt
 vendor/etc/powercontable.cfg
 vendor/etc/powerscntbl.cfg
@@ -1471,7 +1455,6 @@ vendor/lib/hi556_lce_mipi_raw_IdxMgr.so
 vendor/lib/hi556_lce_mipi_raw_tuning.so
 vendor/lib/hw/dfps.mt6765.so
 vendor/lib/hw/flp.default.so
-vendor/lib/hw/kmsetkey.default.so
 vendor/lib/hw/kmsetkey.trustonic.so
 vendor/lib/hw/libMcGatekeeper.so
 vendor/lib/hw/libSoftGatekeeper.so
@@ -1631,7 +1614,6 @@ vendor/lib64/hi556_lce_mipi_raw_IdxMgr.so
 vendor/lib64/hi556_lce_mipi_raw_tuning.so
 vendor/lib64/hw/dfps.mt6765.so
 vendor/lib64/hw/flp.default.so
-vendor/lib64/hw/kmsetkey.default.so
 vendor/lib64/hw/kmsetkey.trustonic.so
 vendor/lib64/hw/libMcGatekeeper.so
 vendor/lib64/hw/libSoftGatekeeper.so
@@ -1798,6 +1780,11 @@ vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.teeregistry@1.0.so
+vendor/nvcfg
+vendor/nvdata
+vendor/persist
+vendor/protect_f
+vendor/protect_s
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png

@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -143,4 +149,33 @@ LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/fstab.mt6765
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.oppo.face.sh
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES    := bin/init.oppo.face.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/init
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.oppo.face_calib.sh
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES    := bin/init.oppo.face_calib.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/init
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.oppo.fingerprints.sh
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES    := bin/init.oppo.fingerprints.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/init
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := engineer_vendor_shell.sh
+LOCAL_SRC_FILES := bin/engineer_vendor_shell.sh
+LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)

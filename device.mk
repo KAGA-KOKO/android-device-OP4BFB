@@ -20,6 +20,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -70,6 +74,13 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    engineer_vendor_shell.sh \
+    init.oppo.face.sh \
+    init.oppo.face_calib.sh \
+    init.oppo.fingerprints.sh \
+
+PRODUCT_PACKAGES += \
+    fstab.mt6765 \
     factory_init.connectivity.rc \
     factory_init.project.rc \
     factory_init.rc \
@@ -87,8 +98,6 @@ PRODUCT_PACKAGES += \
     meta_init.project.rc \
     meta_init.rc \
     multi_init.rc \
-    fstab.mt6765 \
-    ueventd.qcom.rc \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
